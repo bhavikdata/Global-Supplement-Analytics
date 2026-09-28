@@ -1,0 +1,7 @@
+Table,Issue,RecordsAffected,Resolution
+Sales,Duplicate order lines,327,"Dropped exact duplicates on OrderLineID, keeping first occurrence"
+Sales,Invalid / malformed OrderDate values,164,Rows with unparseable dates were rejected and logged; not loaded into clean table
+Sales,Inconsistent country label formatting (e.g. 'USA' vs 'United States' vs 'US'),54900,Standardised via country lookup/mapping table to CountryID
+Products,Missing Category value,2,Missing categories back-filled using ProductName keyword mapping; flagged in Data_Quality sheet
+Inventory,Negative ClosingStock (system export glitch),3,Recalculated ClosingStock = OpeningStock + Receipts - UnitsSold; verified balance equation
+Geography,Duplicate country row with alternate spelling,1,"Deduplicated on CountryID, canonical name retained from master Geography table"

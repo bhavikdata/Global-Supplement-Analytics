@@ -1,0 +1,16 @@
+ProductID,ProductName,Category,UnitCost,ListPrice,SupplierID,ReorderPoint,TargetStock,LeadTimeDays
+1000,Vitamin C 1000mg,,11.74,28.35,102,364,668,26
+1001,Vitamin D3 2000IU,Vitamins,4.94,15.64,103,340,1173,29
+1002,Multivitamin Daily,Vitamins,5.28,12.83,103,242,746,32
+1003,Vitamin B-Complex,Vitamins,10.44,30.82,103,260,960,13
+1004,Whey Protein Vanilla,Protein,9.55,18.04,104,356,821,24
+1005,Whey Protein Chocolate,Protein,11.58,26.59,101,392,956,32
+1006,Plant Protein Unflavored,Protein,11.78,24.41,102,266,998,8
+1007,Casein Protein,Protein,5.54,15.27,104,336,893,34
+1008,Pre-Workout Blast,Sports Nutrition,7.26,16.83,101,267,1236,12
+1009,BCAA Recovery,Sports Nutrition,5.3,13.07,102,206,1051,25
+1010,Creatine Monohydrate,Sports Nutrition,8.37,24.82,103,325,677,15
+1011,Electrolyte Mix,,12.32,36.06,104,246,1318,15
+1012,Omega-3 Fish Oil,Wellness,10.82,21.59,104,199,1243,7
+1013,Probiotic 50B,Wellness,11.87,32.41,102,326,821,28
+1014,Magnesium Glycinate,Wellness,8.59,22.3,101,184,796,10
