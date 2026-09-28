@@ -35,31 +35,31 @@ value.
 ```mermaid
 flowchart LR
     subgraph Raw["Raw Extracts (data/raw/*.csv)"]
-        R1[Sales_raw.csv]
-        R2[Products_raw.csv]
-        R3[Inventory_raw.csv]
-        R4[Geography_raw.csv]
+        R1["Sales_raw.csv"]
+        R2["Products_raw.csv"]
+        R3["Inventory_raw.csv"]
+        R4["Geography_raw.csv"]
     end
 
-    subgraph ETL["ETL (Python: generate_data.py / build_reporting_layer.py)\nor Power Query, if rebuilt in desktop Excel"]
-        C1[Dedupe, fix dates,\nstandardize country labels]
-        C2[Back-fill missing categories]
-        C3[Recalculate inventory balances]
-        C4[Join Sales + Products +\nGeography + Channels]
+    subgraph ETL["ETL (Python: generate_data.py / build_reporting_layer.py)<br/>or Power Query, if rebuilt in desktop Excel"]
+        C1["Dedupe, fix dates,<br/>standardize country labels"]
+        C2["Back-fill missing categories"]
+        C3["Recalculate inventory balances"]
+        C4["Join Sales + Products +<br/>Geography + Channels"]
     end
 
     subgraph Clean["Clean Tables (data/clean/*.csv)"]
-        F1[Sales / Inventory /\nPurchaseOrders (fact)]
-        F2[Products / Geography /\nChannels / Calendar (dim)]
-        F3[Sales_Reporting /\nInventory_Reporting (denormalized)]
+        F1["Sales / Inventory /<br/>PurchaseOrders (fact)"]
+        F2["Products / Geography /<br/>Channels / Calendar (dim)"]
+        F3["Sales_Reporting /<br/>Inventory_Reporting (denormalized)"]
     end
 
     subgraph Excel["Global_Supplement_Analytics.xlsx"]
-        E1[Executive_Dashboard]
-        E2[Sales_Analysis]
-        E3[Inventory_Analysis]
-        E4[Forecast]
-        E5[Data_Quality]
+        E1["Executive_Dashboard"]
+        E2["Sales_Analysis"]
+        E3["Inventory_Analysis"]
+        E4["Forecast"]
+        E5["Data_Quality"]
     end
 
     R1 & R2 & R3 & R4 --> C1 --> C2 --> C3 --> C4
